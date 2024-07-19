@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/png;base64,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" type="image/x-icon">
+</head>
+<body>
+  <div class="container-lg">
+    <input type="text" class="Display" readonly>
+    <div class="buttons">
+      <button class="operator key-others" data-value="AC">AC</button>
+      <button class="operator key-others" data-value="DEL">DEL</button>
+      <button class="operator key-others" data-value="%">%</button>
+      <button class="operator" data-value="/">/</button>
+
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button class="operator" data-value="*">*</button>
+
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button class="operator" data-value="-">-</button>
+
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button class="operator" data-value="+">+</button>
+
+      <button data-value="0">0</button>
+      <button data-value="00">00</button>
+      <button data-value=".">.</button>
+      <button class="operator" data-value="√">√</button>
+
+      <button class="operator key-others" data-value="(">(</button>
+      <button class="operator key-others" data-value=")">)</button>
+    </div>
+    <button class="operator equal" data-value="=">=</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
